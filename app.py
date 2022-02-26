@@ -146,13 +146,13 @@ def event_handle(event):
         replyObj = StickerSendMessage(package_id=str(1),sticker_id=str(sk_id))
         line_bot_api.reply_message(rtoken, replyObj)
         return ''
-time = input("ใส่ข้อคสามเร็วว")
+
     if msgType == "text":
         msg = str(event["message"]["text"])
         if msg == "สวัสดี" : 
             replyObj = TextSendMessage(text="ดีควัฟ")
-        elif msg == "กินข้าวยัง" : 
-            replyObj = TextSendMessage(text="โน")
+        elif msg == "พรุ่งนี้มีส่งงานอะไรมั่ง" : 
+            replyObj = TextSendMessage(text="ส่งงานเคมี ก่อนพรุ่งนี้เที่ยงคืน ควัฟ")
         elif msg == "เที่ยวมะ" :
             replyObj = TextSendMessage(text="ไปป")
         else :
