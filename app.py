@@ -154,9 +154,9 @@ def event_handle(event):
         elif msg == "ต้นกัญชาราคาเท่าไหร่" : 
             replyObj = TextSendMessage(text="350 บาท ตามราคาตลาดคั้บ")
             replyObj = TextSendMessage(text="รับต้นนี้มั้ยครับ")
-            if msg == "เอา" :
+        elif msg == "เอา" :
             replyObj = TextSendMessage(text="ได้ครับกำลังจัดส่ง")
-            if msg == "ไม่เอา" :
+        elif msg == "ไม่เอา" :
             replyObj = TextSendMessage(text="ขอบคุณที่ใช้บริการครับ")
         else :
             replyObj = TextSendMessage(text=msg)
